@@ -21,3 +21,4 @@ dataAbout();
 //handel counter down  //render from scrolling-countDown.js
 let section = document.querySelector(".count-down");
 countDown(section);
+

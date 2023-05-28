@@ -1,3 +1,4 @@
+import {reveal} from "./animation.js"
 // handel navbar
 function handelMdNavMenu() {
   const navbarBtn = document.querySelector(".navbar-toggler") ;
@@ -54,3 +55,6 @@ function scrollProgress() {
   })
 }
 scrollProgress()
+
+reveal(document.querySelectorAll(".reveal"),50)
+reveal(document.querySelectorAll(".revealLeft"),50)
