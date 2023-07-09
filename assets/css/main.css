@@ -83,6 +83,11 @@ span {
     font-size: 18px;
   }
 }
+@media(min-width:1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}
 .reveal {
   transform: translateY(50px);
   opacity: 0;
@@ -289,6 +294,7 @@ form {
   color: var(--main-color);
 }
 .tab-list {
+  max-width: 740px;
   position: relative;
 }
 .tab-list .tab-body  {
@@ -606,7 +612,7 @@ header.fixedNav .navbar .navbar-toggler span {
 /* --------------- banners ----------------- */
 .banner {
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 1600px;
   width: 100%;
   display: grid;
   grid-auto-flow: column;
@@ -761,7 +767,7 @@ header.fixedNav .navbar .navbar-toggler span {
 /* --------------- home landing----------------- */
 /* --------------- testimonials ----------------- */
 .testimonials {
-  max-width: 1320px;
+  max-width: 1600px;
   width: 100%;
   display: grid;
   grid-auto-flow: column;
@@ -771,6 +777,11 @@ header.fixedNav .navbar .navbar-toggler span {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
+}
+@media(min-width:1400px){
+  .testimonials {
+    grid-auto-columns: calc((100% / 3) - 12px );
+  }
 }
 @media(max-width:992px){
   .testimonials {
